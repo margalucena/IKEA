@@ -30,7 +30,7 @@ body {
     font-family: "Elephant", "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
     /* Full-width splash background image (no crop) */
     background: var(--bg) no-repeat center top;
-    background-image: url("Assets/IKEA splash background.png");
+    background-image: url("Assets/Images/IKEA splash background.png");
     /* Make the image span the full width without cropping; maintain aspect ratio */
     background-size: 300% auto;
     background-position: 66% 40%;
@@ -42,9 +42,6 @@ body {
     padding: 24px;
 }
 
-/* Shell */
-/* .auth-shell { width: 100%; max-width: 980px; background: white; border-radius: 16px; padding: 28px; box-shadow: 0 8px 30px rgba(16, 24, 40, 0.08); } */
-/* Splash */
 .auth-splash {
     text-align: center;
     padding: 28px 12px;
