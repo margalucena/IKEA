@@ -42,9 +42,19 @@ if (favoriteButton && favoriteIcon) {
   });
 }
 
+// document.querySelectorAll(".top-seller-card").forEach((card) => {
+//   card.addEventListener("click", () => {
+//     window.location.href = "product.html";
+//   });
+// });
+
 document.querySelectorAll(".top-seller-card").forEach((card) => {
   card.addEventListener("click", () => {
-    window.location.href = "product.html";
+    document.body.classList.add("slide-out-left");
+
+    setTimeout(() => {
+      window.location.href = "product.html";
+    }, 100);
   });
 });
 
@@ -70,4 +80,22 @@ function showToast(message = "Added to cart") {
   setTimeout(() => {
     toast.classList.remove("show");
   }, 1500);
+}
+
+const accountBtn = document.getElementById("accountBtn");
+const accountDrawer = document.getElementById("accountDrawer");
+const drawerOverlay = document.getElementById("drawerOverlay");
+const closeDrawer = document.getElementById("closeDrawer");
+
+accountBtn.addEventListener("click", () => {
+  accountDrawer.classList.add("open");
+  drawerOverlay.classList.add("show");
+});
+
+closeDrawer.addEventListener("click", closeAccountDrawer);
+drawerOverlay.addEventListener("click", closeAccountDrawer);
+
+function closeAccountDrawer() {
+  accountDrawer.classList.remove("open");
+  drawerOverlay.classList.remove("show");
 }

@@ -31,7 +31,7 @@
           <button aria-label="Favorites">
             <img class="icon" src="Assets/Icons/heart.svg" alt="Favorites" />
           </button>
-          <button aria-label="Account">
+          <button id="accountBtn" aria-label="Account">
             <img class="icon" src="Assets/Icons/user.svg" alt="Account" />
           </button>
         </nav>
@@ -286,6 +286,26 @@
       <img src="Assets/Icons/check.svg" alt="Success" class="toast-icon" />
       <span>Added to cart</span>
     </div>
+    <!-- new -->
+    <div id="drawerOverlay" class="drawer-overlay"></div>
+
+    <aside id="accountDrawer" class="account-drawer">
+      <div class="drawer-header">
+        <h2>My Account</h2>
+
+        <button id="closeDrawer" class="close-drawer">✕</button>
+      </div>
+
+      <nav class="drawer-menu">
+        <a href="#">My Account</a>
+        <a href="#">Addresses</a>
+        <a href="#">Orders</a>
+        <a href="#">Wallet</a>
+        <a href="#">Log Out</a>
+      </nav>
+    </aside>
+    <!-- new -->
+
     <script src="home.js"></script>
   </body>
 </html>

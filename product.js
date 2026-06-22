@@ -67,3 +67,15 @@ document.querySelectorAll(".accordion").forEach((accordion) => {
     }
   });
 });
+
+const backButton = document.querySelector(".back-button");
+
+backButton?.addEventListener("click", (e) => {
+  e.preventDefault();
+
+  document.body.classList.add("slide-out-right");
+
+  setTimeout(() => {
+    window.location.href = backButton.href;
+  }, 100);
+});

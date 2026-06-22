@@ -20,7 +20,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background: #0066bd;
+  background: #ffffff;
 }
 
 html,
@@ -676,4 +676,49 @@ hr.solid {
 .toast-icon {
   width: 18px;
   height: 18px;
+}
+
+.slide-out-right {
+  animation: slideOutRight 100ms ease forwards;
+}
+
+@keyframes slideOutRight {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
+
+body {
+  animation: slideInLeft 100ms ease;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+body {
+  opacity: 0;
+  transform: translateX(40px);
+  animation: pageEnter 100ms ease forwards;
+}
+
+@keyframes pageEnter {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
