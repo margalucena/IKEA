@@ -13,6 +13,8 @@ Note: This is a personal portfolio project created for educational purposes. It 
 [Figma Prototype]
 https://www.figma.com/proto/kMaNxYHrnXms6XhSTjulSm/IKEA-Mobile-App-Concept?page-id=0%3A1&node-id=803-1600&viewport=-1471%2C-64%2C0.13&t=osEZ9L3ukRoYuOaT-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=803%3A1571
 
+<img width="1920" height="1080" alt="Mobile App Design Concept" src="https://github.com/user-attachments/assets/4af0cae5-8ff5-49bb-b1c8-8796a6bc0954" />
+
 ---------------------------------------
 
 Pages
